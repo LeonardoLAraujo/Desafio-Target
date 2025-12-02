@@ -78,9 +78,9 @@ export default class ChallegeOne extends LitElement{
     }   
 
     private commissionRules = [
-        { min: 0,   max: 100, rate: 0    },   // até 100 → sem comissão
-        { min: 100, max: 500, rate: 0.05 },   // entre 100 e 500
-        { min: 500, max: Infinity, rate: 0.05 }, // acima de 500
+        { min: 0,   max: 100, rate: 0    },  
+        { min: 100, max: 500, rate: 0.05 },  
+        { min: 500, max: Infinity, rate: 0.05 },
     ];
 
     @state()
@@ -105,7 +105,7 @@ export default class ChallegeOne extends LitElement{
     }
 
     private async _getSales(): Promise<Sale[]>{
-        const request = await fetch("../../public/data/sales.json");
+        const request = await fetch("../data/sales.json");
         const response = await request.json();
 
         return response.vendas;
