@@ -1,0 +1,15 @@
+:root{
+    --background: #0f0f12;
+    --color-neon-pink-light: #CB5EC6;
+    --bg-main: #0f0f12;
+    --bg-card: #1e1e24;
+    --bg-card-hover: #27272f;
+    --primary: #9333ea; /* Roxo */
+    --primary-dark: #7e22ce;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+    --glass: rgba(15, 15, 18, 0.9);
+    --radius: 12px;
+    --green: rgb(33, 131, 33);
+    --transition: all 0.3s ease;
+}
