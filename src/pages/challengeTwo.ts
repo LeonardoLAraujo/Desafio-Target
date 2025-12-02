@@ -118,7 +118,7 @@ export default class ChallengeTwo extends LitElement{
     }
 
     private async _getStock(): Promise<Stock[]>{
-        const request = await fetch("../data/stock.json");
+        const request = await fetch("./data/stock.json");
         const response = await request.json();
 
         return response.estoque;
