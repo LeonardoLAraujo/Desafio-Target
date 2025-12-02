@@ -105,7 +105,7 @@ export default class ChallegeOne extends LitElement{
     }
 
     private async _getSales(): Promise<Sale[]>{
-        const request = await fetch("../data/sales.json");
+        const request = await fetch("../../public/data/sales.json");
         const response = await request.json();
 
         return response.vendas;
